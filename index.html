@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>藍空学園高等学校・中学校 公式サイト</title>
     <style>
-        /* 1. 画面全体の設定 */
         body { 
             margin: 0; padding: 0; 
             background-color: #f0f4f8; 
-            font-family: sans-serif; 
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif; 
             color: #333; 
         }
 
-        /* 2. 全体を包む枠（これが消えない秘訣） */
         .main-container {
             max-width: 800px;
             margin: 0 auto;
             background-color: #ffffff;
-            display: block; /* 縦に並べるだけにする */
-            overflow: visible; /* 中身を隠さない */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        /* 3. 画像の設定：枠からはみ出さない */
         img {
             max-width: 100%;
             height: auto;
@@ -30,30 +26,66 @@
             margin: 0 auto;
         }
 
-        /* 4. 各セクションの余白 */
         header { background: #4a90e2; color: white; text-align: center; padding: 40px 20px; }
-        .section { padding: 30px 20px; border-bottom: 1px solid #eee; }
+        .section { padding: 30px 20px; border-bottom: 1px dotted #ccc; }
         h1, h2 { color: #2c3e50; border-left: 8px solid #4a90e2; padding-left: 15px; }
 
-        /* 5. フッター：必ず一番下に来る */
+        /* --- ボタンのデザイン設定 --- */
+        .button-container {
+            display: flex;
+            flex-direction: column; /* 縦に並べる（バグ防止） */
+            gap: 15px;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .nav-button {
+            display: block;
+            width: 80%; /* ボタンの横幅 */
+            max-width: 300px;
+            padding: 15px 20px;
+            background-color: #4a90e2;
+            color: white !important;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px #357abd;
+            transition: all 0.2s;
+        }
+
+        .nav-button:hover {
+            transform: translateY(2px);
+            box-shadow: 0 2px #357abd;
+        }
+
+        .nav-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 #357abd;
+        }
+
         footer { 
             background: #333; color: white; 
             text-align: center; padding: 40px 20px; 
         }
-        footer a { color: #4a90e2; text-decoration: none; margin: 0 10px; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="main-container">
 
-    <img src="RG/rankuugakuen%20(1).jpg" alt="藍空学園メイン画像">
-
+    <img src="RG/rankuugakuen%20(1).jpg" alt="メイン画像">
 
     <header>
         <h1>藍空学園高等学校・中学校</h1>
         <p>〜 勉強のプレッシャーから離れた、第二の居場所 〜</p>
     </header>
+
+    <div class="button-container">
+        <a href="rules.html" class="nav-button">📜 利用規約・校則</a>
+        <a href="calendar.html" class="nav-button">📅 学園行事予定</a>
+        <a href="privacy.html" class="nav-button">🔒 個人情報保護方針</a>
+    </div>
 
     <div class="section">
         <h2>学園の目的</h2>
@@ -63,33 +95,28 @@
     <div class="section">
         <h2>公式YouTube</h2>
         <div style="text-align:center; margin-bottom:20px;">
-            <img src="RG/pachi.png" style="width:200px; margin:10px;" alt="ぱちしらす">
-            <img src="RG/unnamed.jpg" style="width:200px; margin:10px;" alt="運営">
+            <img src="RG/ぱちしらすプロフィール写真.png" style="width:180px; margin:10px; border-radius: 50%;" alt="ぱちしらす">
+            <img src="RG/unnamed.jpg" style="width:180px; margin:10px;" alt="運営">
         </div>
-        <p style="text-align:center;">
-            <a href="https://youtu.be/8HL3Zm_eQ2E" target="_blank">▶︎ 最新動画を視聴する</a><br><br>
-            <a href="https://youtu.be/ftO0zmroVWo" target="_blank">▶︎ 学園紹介を視聴する</a>
-        </p>
+        <div style="text-align:center;">
+            <a href="https://youtu.be/8HL3Zm_eQ2E" target="_blank" style="color:#e74c3c; font-weight:bold;">▶︎ 最新動画を視聴する</a><br><br>
+            <a href="https://youtu.be/ftO0zmroVWo" target="_blank" style="color:#e74c3c; font-weight:bold;">▶︎ 学園紹介を視聴する</a>
+        </div>
     </div>
 
     <div class="section">
         <h2>チャンネル構成</h2>
-        <img src="RG/unnamed1.png" alt="構成図" style="border: 1px solid #ddd;">
+        <img src="RG/unnamed1.png" alt="構成図">
         <p>自己紹介、教室、部活動など、多彩な場所が用意されています。</p>
     </div>
 
     <div class="section">
         <h2>防災対策</h2>
-        <img src="RG/dadad.png" alt="防災システム" style="border: 1px solid #ddd;">
-        <p>防災通知システム「EarthQuickly」を導入し、安全をサポートしています。</p>
+        <img src="RG/dadad.png" alt="防災システム">
+        <p>防災通知システム「EarthQuickly」を導入し、生徒の安全をサポートしています。</p>
     </div>
 
     <footer>
-        <div style="margin-bottom:20px;">
-            <a href="rules.html">利用規約・校則</a>
-            <a href="calendar.html">学園行事予定</a>
-            <a href="privacy.html">個人情報保護</a>
-        </div>
         <p>© 藍空学園高等学校・中学校</p>
     </footer>
 
@@ -97,4 +124,3 @@
 
 </body>
 </html>
-
