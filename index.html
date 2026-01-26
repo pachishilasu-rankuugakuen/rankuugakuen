@@ -5,41 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>藍空学園高等学校・中学校 公式サイト</title>
     <style>
-        body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif; line-height: 1.8; color: #333; background-color: #f0f4f8; margin: 0; padding: 0; }
-        .wrapper { max-width: 900px; margin: 0 auto; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.1); overflow: hidden; }
-        img { max-width: 100%; height: auto; display: block; }
-        header { background-color: #4a90e2; color: #fff; padding: 40px 20px; text-align: center; }
-        .content { padding: 30px; }
-        h1, h2 { color: #2c3e50; border-left: 10px solid #4a90e2; padding-left: 15px; margin-top: 40px; clear: both; }
+        /* 崩れを防ぐためのリセット */
+        body { 
+            font-family: "Helvetica Neue", Arial, sans-serif; 
+            line-height: 1.8; 
+            color: #333; 
+            background-color: #f0f4f8; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .wrapper { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            border: 1px solid #ddd;
+        }
+        /* 画像がはみ出さない、かつ消えないための設定 */
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto;
+        }
+        header { 
+            background-color: #4a90e2; 
+            color: #fff; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+        .content { padding: 20px; }
+        section { margin-bottom: 50px; }
+        h1, h2 { 
+            color: #2c3e50; 
+            border-left: 10px solid #4a90e2; 
+            padding-left: 15px; 
+            margin-top: 30px; 
+            margin-bottom: 20px;
+        }
         
-        /* プロフィールセクション */
-        .profile-section { display: flex; gap: 20px; justify-content: center; margin-bottom: 25px; flex-wrap: wrap; }
-        .profile-section img { width: 250px; height: 250px; object-fit: cover; border: 1px solid #eee; }
-        
-        /* YouTubeグリッド */
-        .yt-grid { display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0; }
-        .yt-card { flex: 1; min-width: 280px; border: 1px solid #eee; text-decoration: none; color: #e74c3c; font-weight: bold; text-align: center; padding-bottom: 15px; }
-        
-        /* チャンネル構成セクション（画像がはみ出さないように修正） */
-        .ch-config { display: block; overflow: hidden; margin-top: 20px; }
-        .ch-img { width: 350px; float: left; margin-right: 20px; margin-bottom: 20px; }
-        @media (max-width: 600px) { .ch-img { width: 100%; float: none; } }
+        /* プロフィールと動画をシンプルに並べる */
+        .image-center { text-align: center; margin-bottom: 20px; }
+        .image-center img { display: inline-block; margin: 10px; width: 250px; }
 
-        /* 防災セクション */
-        .bousai-img { width: 100%; border: 1px solid #ddd; margin-top: 10px; }
+        .yt-list { display: flex; flex-direction: column; gap: 20px; }
+        .yt-card { border: 1px solid #eee; text-decoration: none; color: #e74c3c; font-weight: bold; text-align: center; padding-bottom: 15px; }
 
-        footer { background: #333; color: #fff; padding: 40px 20px; text-align: center; clear: both; }
+        footer { 
+            background: #333; 
+            color: #fff; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
         .footer-nav a { color: #4a90e2; text-decoration: none; margin: 0 10px; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="wrapper">
-    <img src="RG/rankuugakuen%20(1).jpg" alt="藍空学園メイン画像" onerror="this.src='RG/rankuugakuen%20%281%29.jpg'">
+    <img src="RG/rankuugakuen%20(1).jpg" alt="藍空学園メイン画像">
 
     <header>
         <h1 style="color:white; border:none; margin:0;">藍空学園高等学校・中学校</h1>
-        <p style="margin-top:10px;">〜 勉強のプレッシャーから離れた、第二の居場所 〜</p>
+        <p>〜 勉強のプレッシャーから離れた、第二の居場所 〜</p>
     </header>
 
     <div class="content">
@@ -50,34 +77,32 @@
 
         <section>
             <h2>公式YouTubeチャンネル</h2>
-            <div class="profile-section">
-                <img src="RG/ぱちしらすプロフィール写真.png" alt="ぱちしらすプロフィール">
+            <div class="image-center">
+                <img src="RG/ぱちしらすプロフィール写真.png" alt="ぱちしらす">
                 <img src="RG/unnamed.jpg" alt="運営メンバー">
             </div>
-            <div class="yt-grid">
+            <div class="yt-list">
                 <a href="https://youtu.be/8HL3Zm_eQ2E" target="_blank" class="yt-card">
                     <img src="https://img.youtube.com/vi/8HL3Zm_eQ2E/hqdefault.jpg" alt="動画1">
-                    <div style="padding:10px;">動画を視聴する</div>
+                    <p>最新動画を視聴する</p>
                 </a>
                 <a href="https://youtu.be/ftO0zmroVWo" target="_blank" class="yt-card">
                     <img src="https://img.youtube.com/vi/ftO0zmroVWo/hqdefault.jpg" alt="動画2">
-                    <div style="padding:10px;">学園紹介を視聴する</div>
+                    <p>学園紹介を視聴する</p>
                 </a>
             </div>
         </section>
 
         <section>
             <h2>チャンネル構成</h2>
-            <div class="ch-config">
-                <img src="RG/unnamed1.png" alt="チャンネル構成" class="ch-img">
-                <p>自己紹介、各学年の教室、eスポーツ部や小説部、リラックスできる校庭など、多様な場所が用意されています。充実した施設をぜひ活用してください。</p>
-            </div>
+            <img src="RG/unnamed1.png" alt="構成図" style="margin-bottom: 20px; border: 1px solid #eee;">
+            <p>自己紹介、各学年の教室、eスポーツ部や小説部、リラックスできる校庭など、多様な場所が用意されています。</p>
         </section>
 
         <section>
             <h2>安全・防災対策</h2>
             <p>当学園では防災通知システム「EarthQuickly」を導入し、生徒の安全をサポートしています。</p>
-            <img src="RG/dadad.png" alt="防災システム" class="bousai-img">
+            <img src="RG/dadad.png" alt="防災システム" style="border: 1px solid #ddd;">
         </section>
     </div>
 
@@ -85,7 +110,7 @@
         <div class="footer-nav" style="margin-bottom:20px;">
             <a href="rules.html">利用規約・校則</a> | 
             <a href="calendar.html">学園行事予定</a> |
-            <a href="privacy.html">個人情報保護</a>
+            <a href="privacy.html">個人情報保護方針</a>
         </div>
         <p>© 藍空学園高等学校・中学校</p>
     </footer>
