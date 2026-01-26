@@ -5,206 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>藍空学園高等学校・中学校 公式サイト</title>
     <style>
-        /* 基本設定：真っ白対策 */
-        body {
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #000000 !important;
-            background-color: #ffffff !important;
-            margin: 0;
-            padding: 0;
-            display: block !important;
+        /* 1. 画面全体の設定 */
+        body { 
+            margin: 0; padding: 0; 
+            background-color: #f0f4f8; 
+            font-family: sans-serif; 
+            color: #333; 
         }
 
-        .wrapper {
-            max-width: 900px;
+        /* 2. 全体を包む枠（これが消えない秘訣） */
+        .main-container {
+            max-width: 800px;
             margin: 0 auto;
-            border: 1px solid #dddddd;
-            background-color: #fff;
+            background-color: #ffffff;
+            display: block; /* 縦に並べるだけにする */
+            overflow: visible; /* 中身を隠さない */
         }
 
-        /* 画像設定：四角を維持 */
+        /* 3. 画像の設定：枠からはみ出さない */
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 0 !important;
             display: block;
-            background-color: #f0f0f0;
+            margin: 0 auto;
         }
 
-        header {
-            background-color: #4a90e2;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
+        /* 4. 各セクションの余白 */
+        header { background: #4a90e2; color: white; text-align: center; padding: 40px 20px; }
+        .section { padding: 30px 20px; border-bottom: 1px solid #eee; }
+        h1, h2 { color: #2c3e50; border-left: 8px solid #4a90e2; padding-left: 15px; }
 
-        .content {
-            padding: 20px 40px;
+        /* 5. フッター：必ず一番下に来る */
+        footer { 
+            background: #333; color: white; 
+            text-align: center; padding: 40px 20px; 
         }
-
-        h1, h2 {
-            color: #2c3e50;
-            border-left: 10px solid #4a90e2;
-            padding-left: 15px;
-            margin-top: 40px;
-        }
-
-        /* YouTube上の画像（大きめに調整） */
-        .profile-section {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
-        }
-        .profile-section img {
-            width: 250px; /* 前回の100pxから大幅に大きくしました */
-            height: 250px;
-            object-fit: cover;
-            border: 1px solid #ddd;
-        }
-
-        /* YouTubeサムネイルエリア */
-        .yt-grid {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        .yt-card {
-            flex: 1;
-            min-width: 300px;
-            border: 1px solid #ccc;
-            text-decoration: none;
-            color: #e74c3c;
-            font-weight: bold;
-            text-align: center;
-            padding-bottom: 10px;
-            background: #fdfdfd;
-        }
-        .yt-card img {
-            width: 100%;
-        }
-
-        .flex-box {
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-        }
-
-        .footer-cta {
-            background: #e1f5fe;
-            padding: 60px 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .seishun {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #4a90e2;
-            margin: 10px 0;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 30px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-        .copyright {
-            margin-top: 20px;
-            font-size: 1rem;
-            border-top: 1px solid #555;
-            padding-top: 20px;
-            font-weight: bold;
-        }
-        
-        a { color: #4a90e2; }
-
-        @media (max-width: 768px) {
-            .flex-box { flex-direction: column; }
-            .profile-section img { width: 100%; height: auto; }
-        }
+        footer a { color: #4a90e2; text-decoration: none; margin: 0 10px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<div class="wrapper">
-    <img src="rankuugakuen (1).jpg" alt="[メイン画像: rankuugakuen (1).jpg]" style="width: 100%;">
+<div class="main-container">
+
+    <img src="RG/top.jpg" alt="メイン画像">
 
     <header>
-        <h1 style="color:white; border:none; margin:0;">藍空学園高等学校・中学校</h1>
-        <p>Discord発祥のオンライン型学園</p>
+        <h1>藍空学園高等学校・中学校</h1>
+        <p>〜 勉強のプレッシャーから離れた、第二の居場所 〜</p>
     </header>
 
-    <div class="content">
-        <section>
-            <h1>Discord発祥のオンライン型学園</h1>
-            <p>この学園は、学生が日々の疲れを癒すことを目的とした、授業なしの学園です。もちろん実在する学園ではありませんが、学生をメインで募集しているので、新しい交流を造ることができます。</p>
-        </section>
+    <div class="section">
+        <h2>学園の目的</h2>
+        <p>この学園は、学生が日々の疲れを癒すことを目的とした、授業のないオンライン型学園です。自由な交流と、穏やかな放課後のような時間を提供します。</p>
+    </div>
 
-        <section>
-            <h2>藍空学園公式YouTubeチャンネル・Lemon8アカウントもあります！</h2>
-            <div class="profile-section">
-                <img src="ぱちしらすプロフィール写真.png" alt="[ぱちしらすプロフィール写真.png]">
-                <img src="unnamed.jpg" alt="[unnamed.jpg]">
-            </div>
+    <div class="section">
+        <h2>公式YouTube</h2>
+        <div style="text-align:center; margin-bottom:20px;">
+            <img src="RG/pachi.png" style="width:200px; margin:10px;" alt="ぱちしらす">
+            <img src="RG/unnamed.jpg" style="width:200px; margin:10px;" alt="運営">
+        </div>
+        <p style="text-align:center;">
+            <a href="https://youtu.be/8HL3Zm_eQ2E" target="_blank">▶︎ 最新動画を視聴する</a><br><br>
+            <a href="https://youtu.be/ftO0zmroVWo" target="_blank">▶︎ 学園紹介を視聴する</a>
+        </p>
+    </div>
 
-            <div class="yt-grid">
-                <a href="https://youtu.be/8HL3Zm_eQ2E" target="_blank" class="yt-card">
-                    <img src="https://img.youtube.com/vi/8HL3Zm_eQ2E/hqdefault.jpg" alt="YouTubeサムネイル1">
-                    <span style="display:block; margin-top:10px;">動画1を視聴する</span>
-                </a>
-                <a href="https://youtu.be/ftO0zmroVWo" target="_blank" class="yt-card">
-                    <img src="https://img.youtube.com/vi/ftO0zmroVWo/hqdefault.jpg" alt="YouTubeサムネイル2">
-                    <span style="display:block; margin-top:10px;">動画2を視聴する</span>
-                </a>
-            </div>
-        </section>
+    <div class="section">
+        <h2>チャンネル構成</h2>
+        <img src="RG/unnamed1.png" alt="構成図" style="border: 1px solid #ddd;">
+        <p>自己紹介、教室、部活動など、多彩な場所が用意されています。</p>
+    </div>
 
-        <section>
-            <h2>学園生活を彩る、目的別チャンネル構成</h2>
-            <div class="flex-box">
-                <img src="unnamed1.png" alt="[unnamed1.png]" style="width:300px;">
-                <div>
-                    <p>藍空学園では、あなたの興味や活動を後押しするよう、チャンネルを体系的に構成しています。</p>
-                    <ul>
-                        <li><strong>自己紹介：</strong>その人のことを知り、話すきっかけを作る。</li>
-                        <li><strong>教室：</strong>何気ない会話で場の空気を盛り上げる。</li>
-                        <li><strong>部活動：</strong>自分の好き・得意を発揮する。</li>
-                        <li><strong>校内施設：</strong>悩みを相談したりする。</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>もしもの時も安心</h2>
-            <p>当サーバーでは、「EarthQuickly」を導入済みです。もしもの地震でもいち早くお知らせをし、素早く身を守ることができます。</p>
-            <p><a href="https://earthquickly.com/discord/" target="_blank">▶ 詳しくはこちら</a></p>
-            <img src="dadad.png" alt="[dadad.png]" style="width:100%; margin-top:10px;">
-        </section>
+    <div class="section">
+        <h2>防災対策</h2>
+        <img src="RG/dadad.png" alt="防災システム" style="border: 1px solid #ddd;">
+        <p>防災通知システム「EarthQuickly」を導入し、安全をサポートしています。</p>
     </div>
 
     <footer>
-        <p>本サーバーは、R.L.A.グループのコミュニティサーバーです。<br>
-        なお、R.L.A.グループもメンバー募集しておりますので、入学方法と同じ方法で検索していただき、ご参加いただけると幸いです。</p>
-        <div class="copyright">©藍空学園</div>
+        <div style="margin-bottom:20px;">
+            <a href="rules.html">利用規約・校則</a>
+            <a href="calendar.html">学園行事予定</a>
+            <a href="privacy.html">個人情報保護</a>
+        </div>
+        <p>© 藍空学園高等学校・中学校</p>
     </footer>
-</div>
 
-<div style="text-align: center; margin: 20px 0;">
-    <a href="rules.html" style="color: #4a90e2; text-decoration: none; font-weight: bold; border: 1px solid #4a90e2; padding: 10px 20px;">
-        利用規約を確認する
-    </a>
-</div>
-
-<div style="text-align: center; margin: 30px 0;">
-    <a href="calendar.html" style="background-color: #4a90e2; color: white; text-decoration: none; padding: 15px 30px; font-weight: bold; display: inline-block; border-radius: 5px; box-shadow: 0 4px #357abd;">
-        📅 学園行事予定（カレンダー）を見る
-    </a>
 </div>
 
 </body>
