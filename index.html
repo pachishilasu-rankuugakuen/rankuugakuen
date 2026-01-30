@@ -10,20 +10,21 @@
             background-color: #f0f4f8; 
             font-family: sans-serif; 
             line-height: 1.6;
+            color: #333;
         }
-        /* コンテナ：ここが崩れないための要 */
+        /* コンテナ：崩れ防止 */
         .main-wrapper {
             max-width: 900px;
             margin: 0 auto;
             background: #fff;
-            display: flex;
-            flex-direction: column;
+            display: block;
         }
-        /* 画像：横幅いっぱいに広げ、縦にはみ出さない */
+        /* 写真はすべて四角のまま */
         img { 
             width: 100%; 
             height: auto; 
             display: block; 
+            border-radius: 0; /* 四角を維持 */
         }
         header { 
             background: #4a90e2; 
@@ -32,20 +33,28 @@
             padding: 30px 10px; 
         }
         .content { padding: 20px; }
-        section { margin-bottom: 40px; }
+        section { margin-bottom: 50px; clear: both; }
         h1, h2 { 
             color: #2c3e50; 
             border-left: 10px solid #4a90e2; 
             padding-left: 15px; 
         }
 
-        /* --- ボタンのデザイン --- */
+        /* プロフィール画像（四角） */
+        .profile-img {
+            width: 200px;
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* ボタンのデザイン */
         .btn-group {
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .custom-btn {
             display: block;
@@ -56,4 +65,6 @@
             color: white !important;
             text-decoration: none;
             text-align: center;
-            font-
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow:
