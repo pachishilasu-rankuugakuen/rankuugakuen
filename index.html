@@ -2,78 +2,70 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>藍空学園高等学校・中学校 公式サイト</title>
     <style>
-        /* 崩れを防止するリセット */
-        body { margin: 0; padding: 0; font-family: sans-serif; line-height: 1.6; background-color: #f0f4f8; }
-        .wrapper { max-width: 900px; margin: 0 auto; background: #fff; }
-        
-        /* 写真はすべて四角のまま */
-        img { width: 100%; height: auto; display: block; border-radius: 0 !important; }
-        .profile-img { width: 200px; display: inline-block; margin: 10px; border: 1px solid #ccc; }
+        /* 1. 枠を壊さないための最小限の設定 */
+        body { margin: 0; padding: 0; background-color: #f0f4f8; font-family: sans-serif; }
+        .main-content { max-width: 900px; margin: 0 auto; background: #fff; }
 
-        header { background: #4a90e2; color: white; text-align: center; padding: 30px 10px; }
-        .content { padding: 20px; }
-        section { margin-bottom: 40px; }
-        h1, h2 { color: #2c3e50; border-left: 10px solid #4a90e2; padding-left: 15px; }
+        /* 2. 写真はすべて四角のまま、横幅に合わせる */
+        img { width: 100%; height: auto; display: block; border: none; }
+        .profile-img { width: 45%; display: inline-block; margin: 2%; }
 
-        /* 下の方に配置するボタン */
-        .btn-group { display: flex; flex-direction: column; gap: 10px; align-items: center; margin-top: 50px; }
-        .custom-btn {
-            display: block; width: 80%; max-width: 400px; padding: 15px;
-            background: #4a90e2; color: white !important; text-decoration: none;
-            text-align: center; font-weight: bold; border-radius: 5px;
-            box-shadow: 0 4px #357abd;
+        /* 3. 各項目の間隔 */
+        header { background: #4a90e2; color: white; text-align: center; padding: 20px; }
+        section { padding: 20px; border-bottom: 1px solid #eee; }
+        h2 { border-left: 8px solid #4a90e2; padding-left: 10px; }
+
+        /* 4. ボタンを一番下に配置（大きく、押しやすく） */
+        .btn-list { text-align: center; padding: 30px 10px; }
+        .btn {
+            display: block; width: 90%; max-width: 400px; margin: 10px auto;
+            padding: 15px; background: #4a90e2; color: white !important;
+            text-decoration: none; font-weight: bold; border-radius: 5px;
         }
 
-        footer { background: #333; color: white; text-align: center; padding: 30px; margin-top: 30px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
     </style>
 </head>
 <body>
 
-<div class="wrapper">
+<div class="main-content">
     <img src="RG/rankuugakuen%20(1).jpg" alt="メイン画像">
 
     <header>
-        <h1 style="color:white; border:none; margin:0;">藍空学園高等学校・中学校</h1>
+        <h1>藍空学園高等学校・中学校</h1>
         <p>Discord発祥のオンライン型学園</p>
     </header>
 
-    <div class="content">
-        <section>
-            <h1>Discord発祥のオンライン型学園</h1>
-            <p>この学園は、学生が日々の疲れを癒すことを目的とした、授業なしの学園です。</p>
-        </section>
+    <section>
+        <h2>学園の目的</h2>
+        <p>この学園は、学生が日々の疲れを癒すことを目的とした、授業なしの学園です。</p>
+    </section>
 
-        <section>
-            <h2>公式YouTubeチャンネル</h2>
-            <div style="text-align:center;">
-                <img src="RG/ぱちしらすプロフィール写真.png" class="profile-img">
-                <img src="RG/unnamed.jpg" class="profile-img">
-            </div>
-            <div style="text-align:center; margin-top:15px;">
-                <p><a href="https://youtu.be/8HL3Zm_eQ2E" target="_blank" style="color:#e74c3c; font-weight:bold;">▶︎ 動画1を視聴</a></p>
-                <p><a href="https://youtu.be/ftO0zmroVWo" target="_blank" style="color:#e74c3c; font-weight:bold;">▶︎ 動画2を視聴</a></p>
-            </div>
-        </section>
+    <section style="text-align: center;">
+        <h2>公式YouTubeチャンネル</h2>
+        <img src="RG/ぱちしらすプロフィール写真.png" class="profile-img">
+        <img src="RG/unnamed.jpg" class="profile-img">
+        <p><a href="https://youtu.be/8HL3Zm_eQ2E" target="_blank">▶︎ 動画1を視聴</a></p>
+        <p><a href="https://youtu.be/ftO0zmroVWo" target="_blank">▶︎ 動画2を視聴</a></p>
+    </section>
 
-        <section>
-            <h2>チャンネル構成</h2>
-            <img src="RG/unnamed1.png">
-            <p>自己紹介、教室、部活動など充実した施設があります。</p>
-        </section>
+    <section>
+        <h2>チャンネル構成</h2>
+        <img src="RG/unnamed1.png">
+        <p>自己紹介、教室、部活動など充実した施設があります。</p>
+    </section>
 
-        <section>
-            <h2>防災対策</h2>
-            <img src="RG/dadad.png">
-        </section>
+    <section>
+        <h2>防災対策</h2>
+        <img src="RG/dadad.png">
+    </section>
 
-        <section class="btn-group">
-            <a href="rules.html" class="custom-btn">📜 利用規約・校則</a>
-            <a href="calendar.html" class="custom-btn">📅 学園行事予定</a>
-            <a href="privacy.html" class="custom-btn">🔒 個人情報保護方針</a>
-        </section>
+    <div class="btn-list">
+        <a href="rules.html" class="btn">📜 利用規約・校則</a>
+        <a href="calendar.html" class="btn">📅 学園行事予定</a>
+        <a href="privacy.html" class="btn">🔒 個人情報保護方針</a>
     </div>
 
     <footer>
