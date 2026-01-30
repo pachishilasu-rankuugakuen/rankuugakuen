@@ -4,34 +4,28 @@
     <meta charset="UTF-8">
     <title>藍空学園高等学校・中学校 公式サイト</title>
     <style>
-        /* 1. 枠を壊さないための最小限の設定 */
-        body { margin: 0; padding: 0; background-color: #f0f4f8; font-family: sans-serif; }
-        .main-content { max-width: 900px; margin: 0 auto; background: #fff; }
-
-        /* 2. 写真はすべて四角のまま、横幅に合わせる */
-        img { width: 100%; height: auto; display: block; border: none; }
-        .profile-img { width: 45%; display: inline-block; margin: 2%; }
-
-        /* 3. 各項目の間隔 */
-        header { background: #4a90e2; color: white; text-align: center; padding: 20px; }
-        section { padding: 20px; border-bottom: 1px solid #eee; }
-        h2 { border-left: 8px solid #4a90e2; padding-left: 10px; }
-
-        /* 4. ボタンを一番下に配置（大きく、押しやすく） */
-        .btn-list { text-align: center; padding: 30px 10px; }
+        body { margin: 0; padding: 0; background: #fff; font-family: sans-serif; color: #000; }
+        img { width: 100%; height: auto; display: block; }
+        .container { max-width: 900px; margin: 0 auto; padding-bottom: 50px; }
+        header { background: #4a90e2; color: #fff; text-align: center; padding: 20px; }
+        section { padding: 20px; border-bottom: 1px solid #ccc; }
+        .profile-box { text-align: center; }
+        .profile-img { width: 180px; margin: 10px; border: 1px solid #000; }
+        /* ボタンのデザイン */
+        .btn-list { text-align: center; padding: 20px; }
         .btn {
-            display: block; width: 90%; max-width: 400px; margin: 10px auto;
-            padding: 15px; background: #4a90e2; color: white !important;
+            display: block; width: 80%; max-width: 350px; margin: 10px auto;
+            padding: 15px; background: #4a90e2; color: #fff !important;
             text-decoration: none; font-weight: bold; border-radius: 5px;
+            border: 1px solid #357abd;
         }
-
-        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; }
     </style>
 </head>
 <body>
 
-<div class="main-content">
-    <img src="RG/rankuugakuen%20(1).jpg" alt="メイン画像">
+<div class="container">
+    <img src="RG/rankuugakuen%20(1).jpg" alt="藍空学園">
 
     <header>
         <h1>藍空学園高等学校・中学校</h1>
@@ -43,7 +37,7 @@
         <p>この学園は、学生が日々の疲れを癒すことを目的とした、授業なしの学園です。</p>
     </section>
 
-    <section style="text-align: center;">
+    <section class="profile-box">
         <h2>公式YouTubeチャンネル</h2>
         <img src="RG/ぱちしらすプロフィール写真.png" class="profile-img">
         <img src="RG/unnamed.jpg" class="profile-img">
